@@ -39,12 +39,12 @@
 }
 
 .qt-logo {
-  height: 120px;  /* keep Qiskit big */
+  height: 100px;  /* keep Qiskit big */
   width: auto;
 }
 
 .ibm-logo {
-  height: 80px;   /* IBM slightly smaller */
+  height: 100px;   /* IBM slightly smaller */
   width: auto;
   transform: scale(0.9);  /* shrink IBM logo to 90% */
   transform-origin: left center; /* keep it aligned neatly */
