@@ -42,15 +42,16 @@
   flex: 1 1 55%;
 }
 
-.about-image {
-  flex: 1 1 40%;
-  text-align: right;
-}
-
 .about-image img {
-  max-width: 100%;
+  max-width: 115%;   /* scale up slightly */
   height: auto;
   border-radius: 12px;
+  transform: scale(1.05);  /* extra boost in size */
+  transition: transform 0.3s ease; /* smooth animation */
+}
+
+.about-image img:hover {
+  transform: scale(1.1);   /* subtle zoom on hover */
 }
 
 
