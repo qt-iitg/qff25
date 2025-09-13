@@ -20,28 +20,26 @@
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar" id="navbar">
-  <div class="nav-container">
-    <div class="nav-logo">
-      <a href="index.html">
+ <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
         <img src="qiskit-logo-top.png" alt="Qiskit Logo" class="logo-img">
-      </a>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#speakers" class="nav-link">Speakers</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#contact" class="nav-link">Contact Us</a> <!-- Now scrolls to section -->
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-    <div class="nav-menu" id="nav-menu">
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#events" class="nav-link">Events</a>
-      <a href="#speakers" class="nav-link">Speakers</a>
-      <a href="#schedule" class="nav-link">Schedule</a>
-      <a href="contact.html" class="nav-link">Contact Us</a> <!-- ✅ FIXED -->
-    </div>
-    <div class="nav-toggle" id="nav-toggle">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-  </div>
-</nav>
+  </nav>
 
 
     <!-- Hero Section -->
@@ -356,6 +354,56 @@
             </div>
         </div>
     </section>
+
+      <section id="contact" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">QT Tech Community IITG</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            We are the organizing team behind Qiskit Fall Fest 2025 at IIT Guwahati.
+            Our mission is to foster a vibrant quantum computing community by bringing
+            together students, researchers, and industry professionals through talks,
+            workshops, and hands-on sessions.
+          </p>
+          <h3>Our Core Team</h3>
+          <ul class="team-list">
+            <li>
+              <span class="team-name">Venkat Sai Teja Kalluri (Lead Organizer)</span>
+              <div class="team-actions">
+                <a href="tel:+911234567890" class="contact-btn"><i class="fas fa-phone"></i> Call</a>
+                <a href="mailto:venkat@example.com" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </li>
+            <li>
+              <span class="team-name">Bhavesh Chamaria (Organizer)</span>
+              <div class="team-actions">
+                <a href="tel:+911234567891" class="contact-btn"><i class="fas fa-phone"></i> Call</a>
+                <a href="mailto:bhavesh@example.com" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </li>
+            <li>
+              <span class="team-name">Daksh Kumar Sambhare (Organizer)</span>
+              <div class="team-actions">
+                <a href="tel:+911234567892" class="contact-btn"><i class="fas fa-phone"></i> Call</a>
+                <a href="mailto:daksh@example.com" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </li>
+            <li>
+              <span class="team-name">Ekas Babbar (Web Developer)</span>
+              <div class="team-actions">
+                <a href="tel:+911234567893" class="contact-btn"><i class="fas fa-phone"></i> Call</a>
+                <a href="mailto:ekas@example.com" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- Footer -->
     <footer class="footer">
