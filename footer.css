@@ -17,21 +17,29 @@
     margin-bottom: 3rem;
 }
 
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .footer-logos {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px; /* space between logos */
-  margin-bottom: 10px;
+  gap: 30px; /* spacing between logos */
+  margin-bottom: 12px;
 }
 
 .footer-logo-img {
-  height: 60px;   /* increase size (adjust as needed: 50px, 70px, etc.) */
+  height: 100px;   /* increased from 60px to 100px */
   width: auto;
   display: block;
-  filter: none !important;   /* ensures true original colors */
-  opacity: 1 !important;     /* ensures no fading */
+  filter: none !important;   /* keep true colors */
+  opacity: 1 !important;
 }
+
 
 
 .footer-section h3,
