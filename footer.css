@@ -20,24 +20,32 @@
 .footer-logo {
   display: flex;
   flex-direction: column;
-  align-items: center;   /* center everything */
+  align-items: center;   /* center everything neatly */
   text-align: center;
 }
 
 .footer-logos {
   display: flex;
-  justify-content: center;  /* center the logos as a group */
+  justify-content: center;
   align-items: center;
-  gap: 30px;                /* space between logos */
+  gap: 25px; /* spacing between logos */
   margin-bottom: 12px;
 }
 
 .footer-logo-img {
-  height: 100px;  /* same size for both logos */
-  width: auto;
   display: block;
-  filter: none !important;  /* preserve original colors */
+  filter: none !important;  /* keep true colors */
   opacity: 1 !important;
+}
+
+.qt-logo {
+  height: 120px; /* keep Qiskit big */
+  width: auto;
+}
+
+.ibm-logo {
+  height: 95px; /* scale IBM slightly smaller */
+  width: auto;
 }
 
 .footer-logo h3 {
@@ -46,6 +54,7 @@
   color: #fff;
   margin: 0;
 }
+
 
 .footer-section h4 {
     margin-bottom: 1.5rem;
