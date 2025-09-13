@@ -207,6 +207,138 @@
     color: var(--primary-color);
 }
 
+/* Speakers Premium Section*/
+
+/* Premium Guests Section with gradient */
+.guestGrad {
+    background: linear-gradient(135deg, #0d0d0d 0%, #111827 100%);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* animated glowing gradient background effect */
+.guestGrad::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(0, 136, 255, 0.15), transparent 60%);
+    animation: rotateGlow 15s linear infinite;
+    z-index: 0;
+}
+
+@keyframes rotateGlow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.guestGrad .guests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Premium Guest Card */
+.guest-card {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.9));
+    border: 1px solid rgba(0, 150, 255, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4),
+                0 0 20px rgba(0, 150, 255, 0.15);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.guest-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: rgba(0, 150, 255, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
+                0 0 30px rgba(0, 150, 255, 0.35);
+    background: linear-gradient(135deg, rgba(20, 30, 50, 0.95), rgba(10, 20, 35, 0.95));
+}
+
+/* Guest Image */
+.guest-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1.5rem;
+    border: 4px solid rgba(0, 136, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.guest-card:hover .guest-image {
+    border-color: rgba(0, 200, 255, 0.8);
+    transform: scale(1.05);
+}
+
+.guest-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Guest Info */
+.guest-info h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #00d8ff, #0077ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.guest-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #00b4ff;
+    margin-bottom: 1rem;
+}
+
+.guest-bio {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Social Links */
+.guest-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.guest-social a {
+    width: 40px;
+    height: 40px;
+    background: rgba(17, 24, 39, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00d8ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 150, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.15);
+}
+
+.guest-social a:hover {
+    background: #00d8ff;
+    color: #0d0d0d;
+    transform: translateY(-3px) scale(1.1);
+}
+
 /* Speakers Section */
 .speakers {
     background: var(--bg-light);
