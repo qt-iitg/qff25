@@ -17,18 +17,22 @@
     margin-bottom: 3rem;
 }
 
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+.footer-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* space between logos */
+  margin-bottom: 10px;
 }
 
 .footer-logo-img {
-    height: 50px;
-    width: auto;
-    filter: brightness(0) invert(1);
+  height: 60px;   /* increase size (adjust as needed: 50px, 70px, etc.) */
+  width: auto;
+  display: block;
+  filter: none !important;   /* ensures true original colors */
+  opacity: 1 !important;     /* ensures no fading */
 }
+
 
 .footer-section h3,
 .footer-section h4 {
