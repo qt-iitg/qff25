@@ -16,6 +16,65 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    /* Dark theme background */
+    body {
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+    }
+
+    /* Team list styling */
+    .team-list {
+      list-style: none; /* remove default bullets */
+      padding: 0;
+      text-align: center;
+    }
+
+    .team-list li {
+      margin: 15px 0;
+      font-size: 1.1rem;
+      background: #1a1a1a;
+      padding: 12px 20px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+
+    /* Custom bullet replacement (quantum dot style) */
+    .team-list li::before {
+      content: "⚛️";
+      margin-right: 10px;
+      color: #00d8ff;
+    }
+
+    /* Contact buttons */
+    .contact-btn {
+      background: #00d8ff;
+      color: #0d0d0d;
+      padding: 6px 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: 0.2s;
+    }
+
+    .contact-btn:hover {
+      background: #00aacc;
+      color: #fff;
+    }
+
+    .contact-btn i {
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -32,30 +91,17 @@
         <a href="index.html#events" class="nav-link">Events</a>
         <a href="index.html#speakers" class="nav-link">Speakers</a>
         <a href="index.html#schedule" class="nav-link">Schedule</a>
-        <a href="contact.html" class="nav-link active">Contact Us</a> <!-- Active here -->
+        <a href="contact.html" class="nav-link active">Contact Us</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section (smaller, for Contact Page) -->
-  <section class="hero contact-hero">
-    <div class="hero-container">
-      <div class="hero-content">
-        <h1 class="hero-title">Contact Us</h1>
-        <h2 class="hero-subtitle">QT Tech Community IIT Guwahati</h2>
-        <p class="hero-description">
-          Get to know the team behind Qiskit Fall Fest 2025 at IIT Guwahati.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Us / Contact Details Section -->
+  <!-- Contact Us Section -->
   <section id="contact" class="about">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">About Us</h2>
-        <p class="section-subtitle">Building the Quantum Computing Community</p>
+        <p class="section-subtitle">QT Tech Community IITG</p>
       </div>
       <div class="about-content">
         <div class="about-text">
@@ -66,11 +112,27 @@
             workshops, and hands-on sessions.
           </p>
           <h3>Our Core Team</h3>
-          <ul>
-            <li>Venkat Sai Teja Kalluri (Lead Organizer)</li>
-            <li>Bhavesh Chamaria (Organizer)</li>
-            <li>Daksh Kumar Sambhare (Organizer)</li>
-            <li>Ekas Babbar (Web Developer)</li>
+          <ul class="team-list">
+            <li>
+              Venkat Sai Teja Kalluri (Lead Organizer)
+              <a href="tel:+911234567890" class="contact-btn"><i class="fas fa-phone"></i> Call</a>
+              <a href="mailto:venkat@example.com" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+            </li>
+            <li>
+              Bhavesh Chamaria (Organizer)
+              <a href="tel:+911234567891" class="contact-btn"><i class="fas fa-phone"></i> Call</a>
+              <a href="mailto:bhavesh@example.com" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+            </li>
+            <li>
+              Daksh Kumar Sambhare (Organizer)
+              <a href="tel:+911234567892" class="contact-btn"><i class="fas fa-phone"></i> Call</a>
+              <a href="mailto:daksh@example.com" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+            </li>
+            <li>
+              Ekas Babbar (Web Developer)
+              <a href="tel:+911234567893" class="contact-btn"><i class="fas fa-phone"></i> Call</a>
+              <a href="mailto:ekas@example.com" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -106,7 +168,6 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="main.js"></script>
 </body>
 </html>
