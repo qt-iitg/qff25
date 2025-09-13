@@ -44,19 +44,18 @@
     height: 70px;
 }
 
-.nav-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: var(--primary-color);
+.nav-logos {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between the two logos */
 }
 
-.logo-img {
-    height: 40px;
-    width: auto;
+.nav-logo-img {
+  height: 60px;   /* increased size (adjust as needed) */
+  width: auto;
+  display: block;
 }
+
 
 .logo-text {
     background: var(--gradient-primary);
