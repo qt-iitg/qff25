@@ -20,39 +20,32 @@
 .footer-logo {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;   /* align everything to the left */
-  text-align: left;          /* text also left aligned */
+  align-items: flex-start;   /* push to the left */
+  text-align: left;
 }
 
 .footer-logos {
   display: flex;
-  justify-content: flex-start; /* push logos to the left */
+  justify-content: flex-start; /* align logos left */
   align-items: center;
-  gap: 25px; /* spacing between logos */
+  gap: 25px;                  /* spacing between logos */
   margin-bottom: 12px;
 }
 
 .footer-logo-img {
   display: block;
-  filter: none !important;  /* keep true colors */
+  filter: none !important;   /* preserve true colors */
   opacity: 1 !important;
 }
 
 .qt-logo {
-  height: 120px; /* Qiskit big */
+  height: 120px;  /* keep Qiskit big */
   width: auto;
 }
 
 .ibm-logo {
-  height: 95px; /* IBM slightly smaller */
+  height: 95px;   /* IBM slightly smaller */
   width: auto;
-}
-
-.footer-logo h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #fff;
-  margin: 0;
 }
 
 .footer-section h4 {
