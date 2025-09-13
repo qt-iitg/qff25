@@ -27,7 +27,7 @@
 .footer-logos {
   display: flex;
   justify-content: flex-start; /* align logos left */
-  align-items: center;
+  align-items: left;
   gap: 25px;                  /* spacing between logos */
   margin-bottom: 12px;
 }
@@ -44,7 +44,7 @@
 }
 
 .ibm-logo {
-  height: 95px;   /* IBM slightly smaller */
+  height: 80px;   /* IBM slightly smaller */
   width: auto;
 }
 
