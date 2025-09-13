@@ -47,11 +47,11 @@
 .nav-logos {
   display: flex;
   align-items: center;
-  gap: 15px; /* space between the two logos */
+  gap: 20px; /* space between the two logos */
 }
 
 .nav-logo-img {
-  height: 60px;   /* increased size (adjust as needed) */
+  height: 50px;   /* increased size (adjust as needed) */
   width: auto;
   display: block;
 }
