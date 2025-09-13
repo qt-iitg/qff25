@@ -46,6 +46,8 @@
 .ibm-logo {
   height: 80px;   /* IBM slightly smaller */
   width: auto;
+  transform: scale(0.9);  /* shrink IBM logo to 90% */
+  transform-origin: left center; /* keep it aligned neatly */
 }
 
 .footer-section h4 {
