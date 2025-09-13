@@ -20,25 +20,27 @@
 .footer-logo {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;  /* align everything to the left */
+  text-align: left;
 }
 
 .footer-logos {
   display: flex;
+  justify-content: flex-start;  /* push logos to the left */
   align-items: center;
-  justify-content: center;
-  gap: 30px; /* spacing between logos */
-  margin-bottom: 12px;
+  gap: 30px;                    /* space between logos */
+  margin-bottom: 16px;
+  transform: scale(1.3);        /* increase logo size */
 }
 
 .footer-logo-img {
-  height: 100px;   /* increased from 60px to 100px */
+  height: 100px;   /* base size of logos */
   width: auto;
   display: block;
-  filter: none !important;   /* keep true colors */
+  filter: none !important;  /* keep true colors */
   opacity: 1 !important;
 }
+
 
 
 
