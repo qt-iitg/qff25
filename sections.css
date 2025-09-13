@@ -30,6 +30,29 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* responsive stacking on small screens */
+}
+
+.about-text {
+  flex: 1 1 55%;
+}
+
+.about-image {
+  flex: 1 1 40%;
+  text-align: right;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 
 /* About Us specific overrides to center content */
 #about-us .about-content {
