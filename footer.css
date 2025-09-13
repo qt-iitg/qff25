@@ -20,13 +20,13 @@
 .footer-logo {
   display: flex;
   flex-direction: column;
-  align-items: center;   /* center everything neatly */
-  text-align: center;
+  align-items: flex-start;   /* align everything to the left */
+  text-align: left;          /* text also left aligned */
 }
 
 .footer-logos {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* push logos to the left */
   align-items: center;
   gap: 25px; /* spacing between logos */
   margin-bottom: 12px;
@@ -39,12 +39,12 @@
 }
 
 .qt-logo {
-  height: 120px; /* keep Qiskit big */
+  height: 120px; /* Qiskit big */
   width: auto;
 }
 
 .ibm-logo {
-  height: 95px; /* scale IBM slightly smaller */
+  height: 95px; /* IBM slightly smaller */
   width: auto;
 }
 
@@ -54,7 +54,6 @@
   color: #fff;
   margin: 0;
 }
-
 
 .footer-section h4 {
     margin-bottom: 1.5rem;
